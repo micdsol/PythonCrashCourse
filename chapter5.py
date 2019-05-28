@@ -1,6 +1,6 @@
 #chapter 5 - dictionaries
 
-## commit test # 3
+## commit test # 4 ##
 
 # chapter 5 - if statements
 
@@ -15,7 +15,7 @@
 #         print(numbers[0] + "st")
 #     elif number == '2':
 #         print(numbers[1] + "st")
-#     elif number == '3':
+#     elif number == '3':}
 #         print(numbers[2] + "rd")
 #     else:
 #         print(number + "th")
