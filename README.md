@@ -1,4 +1,4 @@
-# Practice Excercises from "Python Crash Course”  - By Eric Matthes 
+# Practice Excercises - "Python Crash Course” - By Eric Matthes 
 
 ## Objective
 
