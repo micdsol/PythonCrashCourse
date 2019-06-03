@@ -1,49 +1,128 @@
 # chapter 6 dictionaries
 
-# .values() looping through all values in a dictionary 
+# 6-6. try it yourself
 
-# favorite_languages = {
+favorite_languages={
     'jen': 'python',
     'sarah': 'c',
     'edward': 'ruby',
     'phil': 'python',
 }
 
-# print("The following languages have been mentioned: ")
-# for language in favorite_languages.values():
-	# print(language.title())
+friends = ['phil','sarah']
 
-# sort - one way to return items in a certain order
+for name in favorite_languages.keys():
+   print(name.title())
 
-#favorite_languages = {
+   if name in friends:
+      print(" Hi " + name.title() + " I see your favorite language is " + favorite_languages[name].title() + "!")
+if 'erin' not in favorite_languages.keys():
+	    print('erin' + " please take our poll")
+
+# goes through the list and sees with people have taken the poll
+
+# .keys() tells python to list all keys in the dict and to sort that list before looping through it
+#
+# for name in sorted(favorite_languages.keys()):
+#     print(name.title() + ", thank you for taking the poll")
+
+# 6-5. Rivers
+
+# runs through dictionary, output 3 major rivers and the country each river runs through.
+
+# rivers = {
+#	'nile':'egypt',
+#	'mississippi': 'Louisiana',
+#	'Amazon': 'manaus',
+#	}
+
+# for x,v in rivers.items():
+#	print('The {} ' 'runs through {}' .format(x,v))
+
+# 6-4. Glossary 2
+
+# looping through a dictionary. 5 new items/values added using .update. Output will produce words associated with meaning
+
+# glossary = {
+#    'ifelse': 'define an action when condtional fails',
+#    'boolean':'conditional test',
+#    'tuples':'a sequence of immutable Python objects',
+#    'if-elif-else': 'runs each conditional test in order until one passes',
+# }
+
+# glossary_2 = {
+#	'modulus': 'remainder of the dicision of left operand by the right',
+#	'keys()': 'method used to work with values of a dict',
+#	'.format': 'positonal formatting',
+#	'while' : 'executes a target statement as long as a given condtion is true',
+#	'float()': 'method return a floating point number from a number or a strong'
+
+#	}
+
+# glossary.update(glossary_2)
+
+# for x,v in glossary.items():
+#	print('\n{}: \n{}' .format(x,v))
+
+
+# .set() to see each item without repitition
+
+# favorite_languages = {
 #    'jen': 'python',
 #    'sarah': 'c',
 #    'edward': 'ruby',
 #    'phil': 'python',
-#}
+# }
 
-# .keys() tells python to list all keys in the dict and to sort that list before looping through it 
+# print("The following languages have been mentionted:")
+# for language in set(favorite_languages.values()):
+#	print(language.title())
+
+# .values() looping through all values in a dictionary
+
+# favorite_languages = {
+#    'jen': 'python',
+#    'sarah': 'c',
+#    'edward': 'ruby',
+#    'phil': 'python',}
+
+# the for statement pulls each value from the dicitonary
+
+# print("The following languages have been mentioned: ")
+# for language in favorite_languages.values():
+# print(language.title())
+
+# sort - one way to return items in a certain order
+
+# favorite_languages = {
+#    'jen': 'python',
+#    'sarah': 'c',
+#    'edward': 'ruby',
+#    'phil': 'python',
+# }
+
+# .keys() tells python to list all keys in the dict and to sort that list before looping through it
 
 # for name in sorted(favorite_languages.keys()):
 #	print(name.title() + ", thank you for taking the poll")
 
 # looping through all the keys in a dictionary
 
-#favorite_languages = {
+# favorite_languages = {
 #    'jen': 'python',
 #    'sarah': 'c',
 #    'edward': 'ruby',
 #    'phil': 'python',
- #}
-#friends = ['phil','sarah']
-#for name in favorite_languages.keys():
+# }
+# friends = ['phil','sarah']
+# for name in favorite_languages.keys():
 #    print(name.title())
 
 #    if name in friends:
 #       print(" Hi " + name.title() + " I see your favorite language is " + favorite_languages[name].title() + "!")
-#if 'erin' not in favorite_languages.keys():
+# if 'erin' not in favorite_languages.keys():
 #	    print('erin' + " please take our poll")
-		
+
 # favorite_languages = {
 #     'jen': 'python',
 #     'sarah': 'c',
@@ -56,7 +135,6 @@
 # for name in favorite_languages: (.keys) can be omitted)
 # for name in favorite_languages.keys():
 #     print(name.title())
-
 
 
 # favorite_languages = {
@@ -90,16 +168,15 @@
 #    'tuples':'a sequence of immutable Python objects',
 #    'if-elif-else': 'runs each conditional test in order until one passes',
 
-#for x,v in glossary.items():
+# for x,v in glossary.items():
 #	print('\n{}:\nDefinition: {}'.format(x,v))
-	
-	
-	
+
+
 # print("The word , " + programming_words[])
 
 # for x in programming_words.items():
-    #print(x)
-    
+# print(x)
+
 
 # print(programming_words)
 
@@ -191,4 +268,4 @@
 # alien_0 = {'color': 'green', 'points': 5}
 #
 # print(alien_0['color'])
-# print(alien_0['points'])
+# print(alien_0['points'])-
