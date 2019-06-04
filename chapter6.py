@@ -1,23 +1,59 @@
 # chapter 6 dictionaries
 
+# Nesting - a set os dictionaries in a list or a list of items as a value in a dictionary
+
+# A list of dictionaries
+
+# aliens.py
+
+alien_0 = {'color':'green', 'points': 5}
+alien_1 = {'color':'yellow', 'points':10}
+alien_2 = {'color':'red', 'points':15}
+
+aliens = [alien_0, alien_1, alien_2]
+
+for alien in aliens:
+    print(alien)
+
+# make an emoty list for starting aliens.
+aliens = []
+
+# make 30 aliens,
+for alien_number in range(30):
+    new_alien = {'color':'green','points':5, 'speed':'slow'}
+    aliens.append(new_alien
+
+# show the first 5 aliens
+
+for alien in aliens[:5]:
+    print(alien)
+print("...")
+
+# show how many aliens have been created
+
+print("total number od aliens " + str(len(aliens)))
+
+
 # 6-6. try it yourself
 
-favorite_languages={
-    'jen': 'python',
-    'sarah': 'c',
-    'edward': 'ruby',
-    'phil': 'python',
-}
+# 6-6. Polling - loops through a list of people who should take the poll. person not on list gets a diff msg
 
-friends = ['phil','sarah']
-
-for name in favorite_languages.keys():
-   print(name.title())
-
-   if name in friends:
-      print(" Hi " + name.title() + " I see your favorite language is " + favorite_languages[name].title() + "!")
-if 'erin' not in favorite_languages.keys():
-	    print('erin' + " please take our poll")
+# favorite_languages={
+#     'jen': 'python',
+#     'sarah': 'c',
+#     'edward': 'ruby',
+#     'phil': 'python',
+# }
+#
+# friends = ['phil','sarah']
+#
+# for name in favorite_languages.keys():
+#    print(name.title())
+#
+#    if name in friends:
+#       print(" Hi " + name.title() + " I see your favorite language is " + favorite_languages[name].title() + "!")
+# if 'erin' not in favorite_languages.keys():
+# 	    print('erin' + " please take our poll")
 
 # goes through the list and sees with people have taken the poll
 
