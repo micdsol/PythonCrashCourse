@@ -4,34 +4,63 @@
 
 # A list of dictionaries
 
+# pizza.py
+
+pizza = {
+    'crust':'thick',
+    'toppings': ['mushrooms', 'extra cheese'],
+}
+
+# summarize the order.
+print("You ordered a " + pizza['crust'] + "-crust pizza" + " with the following toppings:")
+
+
+for topping in pizza['toppings']:
+    print("\t" + topping)
+
 # aliens.py
 
-alien_0 = {'color':'green', 'points': 5}
-alien_1 = {'color':'yellow', 'points':10}
-alien_2 = {'color':'red', 'points':15}
+# alien_0 = {'color':'green', 'points': 5}
+# alien_1 = {'color':'yellow', 'points':10}
+# alien_2 = {'color':'red', 'points':15}
+#
+# aliens = [alien_0, alien_1, alien_2]
+#
+# for alien in aliens:
+#     print(alien)
+#
+# # make an emoty list for starting aliens.
+# aliens = []
+#
+# # make 30 aliens,
+# for alien_number in range(30):
+#     new_alien = {'color':'green','points':5, 'speed':'slow'}
+#     aliens.append(new_alien)
+#
+# for alien in aliens[0:3]:
+#     if alien['color']=='green':
+#         alien['color']= 'yellow'
+#         alien['speed']='mediun'
+#         alien['points'] = 10
+#
+# # you can expand on this loop using an elif statement
+#     elif alien['color'] == 'yellow':
+#         alien['color'] = 'red'
+#         alien['color']= 'fast'
+#         alien['points']= 15
 
-aliens = [alien_0, alien_1, alien_2]
 
-for alien in aliens:
-    print(alien)
 
-# make an emoty list for starting aliens.
-aliens = []
-
-# make 30 aliens,
-for alien_number in range(30):
-    new_alien = {'color':'green','points':5, 'speed':'slow'}
-    aliens.append(new_alien
 
 # show the first 5 aliens
 
-for alien in aliens[:5]:
-    print(alien)
-print("...")
-
-# show how many aliens have been created
-
-print("total number od aliens " + str(len(aliens)))
+# for alien in aliens[:5]:
+#     print(alien)
+# print("...")
+#
+# # show how many aliens have been created
+#
+# print("total number od aliens " + str(len(aliens)))
 
 
 # 6-6. try it yourself
