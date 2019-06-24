@@ -1,22 +1,170 @@
 # chapter 6 dictionaries
 
+# 6-12.TRY IT YOURSELF
+
+# 6-11 name 3 cities as keys in a dict. include info: country, population, one interesting fact
+
+# cities = {
+#     'babylon':{
+#         'country_location':'iraq',
+#         'approximate_population': '200,000',
+#         'intersting_fact':'was the largest city in the world from around 1770 BC to 1670 BC',
+# },
+#     'chernobyl':{
+#         'country_location':'ukraine',
+#         'approximate_population': '500',
+#         'intersting_fact':'reactor 4 exploded',
+#     },
+#     'egypt':{
+#         'country_location': 'ukraine',
+#         'approximate_population': '97.5 million',
+#         'intersting_fact': 'pyramids built bettween 2589 BC and 2504 BC',
+#     },
+#
+#
+# }
+#
+# for name, city in cities.items():
+#     country = city['country_location']
+#     population = city['approximate_population']
+#     fact = city['intersting_fact']
+#     print("\nCities: " + name.title() + "\nCountry : " + country.title() + "\nPopulation: " + "\nFact: " + fact)
+
+# 6-10 favorite numbers:
+# favorite_numbers = {
+
+#     'jacob':[1,9,0],
+#     'kent': ['33','42','92'],
+#     'justin': ['60','38','27'],
+#     'justine': ['200','3000','223'],
+#     'jack': ['21','16','17'],
+# }
+# for name,numbers in favorite_numbers.items():
+#     print(name.title() + "'s favorite numbers are: ")
+#     for number in numbers:
+#         print(number)
+
+# 6-9.Favorite PLaces:
+#
+# favorite_places = {
+#     'van': [ 'las vegas','santa ana','thunder valley'],
+#     'thuy': ['italy','vietnam','france'],
+#     'justine':['san francisco','bali','morocco'],
+#
+#     }
+# for name,places in favorite_places.items():
+#     print("\n" + name.title() + "'s favorite places are: " )
+#     for place in places:
+#         print("\t" + place.title())
+
+
+# 6-8.Pets:
+
+# a dictionary of pets with name, kind of animal, and owners name
+
+# pets = {
+#     'bella':{
+#         'animal_type':'cat',
+#         'owners_name':'mike',
+# },
+#     'koji':{
+#         'animal_type': 'dog',
+#         'owners_name': 'kelly',
+#
+#     },
+#     'ninja': {
+#         'animal_type': 'turtle',
+#         'owners_name': 'justine',
+#
+#     },
+# }
+#
+# for name, user_pets in pets.items():
+#     type = user_pets['animal_type']
+#     owner = user_pets['owners_name']
+#
+#     print("\nName: " + name.title()+"\nAnimal Type: " + type.title() + "\nOwner: " + owner.title())
+
+#
+# # 6-7.People
+#
+# people = {
+#     'justine':{
+#         'age':'33',
+#         'last_name':'lu',
+#         'location':'south san francisco',
+#         'occupation':'nurse',
+# },
+#     'van':{
+#         'age': '74',
+#         'last_name': 'nguyen',
+#         'location': 'dublin',
+#         'occupation': 'chef',
+#
+#     },
+#
+#     'dan':{
+#         'age': '45',
+#         'last_name': 'ha',
+#         'location': 'dublin',
+#         'occupation': 'engineer',
+#     },
+# }
+#
+# for name, user_info in people.items():
+#     full_name = name + " " + user_info['last_name']
+#     print("\nName: " + full_name.title())
+#     location = user_info['location']
+#     occupation = user_info['occupation']
+#     age = user_info['age']
+#
+#     print("Age: " + age.title() + "\nLocation: " + location.title()+ "\nOccupation: "+ occupation.title())
+
+
+# 6-7.PEOPLE
+
 # Nesting - a set os dictionaries in a list or a list of items as a value in a dictionary
+
+# A dictionary in a dictionary
+
+# many_users.py
+
+# users = {
+#     'aeinstein': {
+#         'first':'albert',
+#         'last':'einstein',
+#         'location':'paris',
+#     },
+#     'mcurie':{
+#         'first':'marie',
+#         'last':'curie',
+#         'location':'paris',
+#     },
+# }
+#
+# for username, user_info in users.items():
+#     print("\nUsername: " + username)
+#     full_name = user_info['first'] + "" + user_info['last']
+#     location = user_info['location']
+#
+#     print("\tFull name: " + full_name.title())
+#     print("\tLocation: " + location.title())
 
 # A list of dictionaries
 
 # pizza.py
 
-pizza = {
-    'crust':'thick',
-    'toppings': ['mushrooms', 'extra cheese'],
-}
-
-# summarize the order.
-print("You ordered a " + pizza['crust'] + "-crust pizza" + " with the following toppings:")
-
-
-for topping in pizza['toppings']:
-    print("\t" + topping)
+# pizza = {
+#     'crust':'thick',
+#     'toppings': ['mushrooms', 'extra cheese'],
+# }
+#
+# # summarize the order.
+# print("You ordered a " + pizza['crust'] + "-crust pizza" + " with the following toppings:")
+#
+#
+# for topping in pizza['toppings']:
+#     print("\t" + topping)
 
 # aliens.py
 
